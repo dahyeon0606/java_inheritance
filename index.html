@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>안녕하세요, 하다현입니다</h1>
+        <img src="./seaotter.jpeg" alt="그림이 없습니다." width="300" height="300">
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#one">안녕하세요</a></li>
+            <li><a href="#two">자기소개</a></li>
+            <li><a href="#inform">기타 개인정보</a></li>
+        </ol>
+    </nav>
+    <main>
+        <hr>
+        <h2 id="one">안녕하세요</h2>
+        <p>멋쟁이 사자처럼에 새로 합류한 하다현입니다. 함께 동아리를 더욱 활기차게 만들어 나가고, 다양한 활동을 통해 서로의 즐거운 추억을 쌓았으면 좋겠습니다.<br>
+           아기사자 여러분과 함께 열정적으로 활동하고, 서로의 다양한 의견과 아이디어를 공유하고 함께 성장해 나갔으면 좋겠습니다!!<br>
+           잘 부탁드립니다!
+        </p>
+        <hr>
+        <h2 id="two">자기소개</h2>
+        <ul>
+            <li>이름: 하다현</li>
+            <li>학과: 컴퓨터공학과</li>
+            <li>학년: 2</li>
+            <li>지원분야: 백엔드</li>
+        </ul>
+        <hr>
+
+        <form>
+                <fieldset>
+                    <legend id="inform">개인 정보</legend>
+
+                    <table>
+                    <tr>  
+                        <th><label for="name"><b>취미</b></label></th>
+                        <td colspan="4"><input type="text" id="hobby" value="여행"></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="phone"><b>좋아하는 동물</b></label></th>
+                        <td colspan="4"><input type="text" id="like" value="해달"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th><b>혈액형</b></th> <!--name 속성만 같으면, 라디오 중 하나만 선택 가능-->
+                        <td>
+                            <label for="o">O형</label>
+                            <input type="radio" id="o" name="blodtype" value="o">
+                        </td>  
+                        <td>
+                            <label for="a">A형</label>
+                            <input type="radio" id="a" name="blodtype" value="a">
+                        </td>
+                        <td>
+                            <label for="ab">AB형</label>
+                            <input type="radio" id="ab" name="blodtype" value="ab">
+                        </td>  
+                        <td>
+                            <label for="b">B형</label>
+                            <input type="radio" id="b" name="blodtype" value="b">
+                        </td>
+                    </tr>
+    
+                    
+                    <tr>
+                        <th rowspan="2"><b>수강과목</b></th>
+                        <td colspan="2"><input type="checkbox" name="Korean" id="Korean"><label for="Korean">인공지능</label></td>
+                        <td colspan="2"><input type="checkbox" name="Science" id="Science"><label for="Science">알고리즘</label></td> 
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="checkbox" name="English" id="English"><label for="English">모바일 프로그래밍</label></td>
+                        <td colspan="2"><input type="checkbox" name="Math" id="Math"><label for="Math">웹 응용기술</label></td>
+                    </tr>
+                    
+                    <tr>
+                    <th><b>좋아하는 음식</b></th>
+                    <td colspan="4"> <!--글자가 길어서 화면 차지를 많이 함, 제한을 줌-->
+                        <select>
+                            <option>블루베리</option>
+                            <option>타코야끼</option>
+                            <option>곱창</option>
+                        </select>
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="제출"></td>
+                    </tr>
+                    
+                </table>
+                </fieldset>
+            
+        </form>
+        <br>
+        <video src="./video.mp4" width="600" height="300" controls type="video/mp4"></video>
+    </main>
+    <footer>
+        <hr>
+        <u>&copy; 멋쟁이 사자처럼 12기</u>
+        <a href="mailto:hada3817@gmail.com">email</a>
+        <a href="#top">상단으로</a>
+    </footer>
+</body>
+</html>
